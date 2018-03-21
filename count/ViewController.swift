@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var count = 0
+    var flag = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,4 +34,22 @@ class ViewController: UIViewController {
         count = 0
         lbl1.text = ("\(count)")
 }
+    
+    
+    
+    
+    @IBAction func color(_ sender: Any) {
+        
+        if flag == 0{view.backgroundColor = UIColor.yellow
+            flag = 1}
+        else if flag == 1{view.backgroundColor = UIColor.white
+            flag = 0
+        }
+    }
+    
+    
+    
+    
+    
+    
 }
